@@ -1,16 +1,8 @@
 {
-  "name": "ts-node-example",
+  "name": "ts-mern-redux-example",
   "version": "1.0.0",
   "description": "",
-  "main": "source/server.ts",
-  "scripts": {
-    "dev": "nodemon src/server.ts",
-    "build": "rm -rf build/ && tsc -p .",
-    "start": "node build/server.js"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "index.js",
   "dependencies": {
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
@@ -29,5 +21,21 @@
     "nodemon": "^2.0.7",
     "ts-node": "^9.1.1",
     "typescript": "^4.1.3"
-  }
+  },
+  "scripts": {
+    "server": "nodemon back_end/src/server.ts",
+    "build": "rm -rf back_end/build/ && cd back_end/ && tsc -p .",
+    "start": "node back_end/build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AChristoff/ts-mern-redux-example.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AChristoff/ts-mern-redux-example/issues"
+  },
+  "homepage": "https://github.com/AChristoff/ts-mern-redux-example#readme"
 }
