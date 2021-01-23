@@ -1,4 +1,5 @@
-import express, { Application, Request, Response, NextFunction } from 'express'
+import { Application, Request, Response, NextFunction } from 'express'
+import express = require('express');
 
 const app: Application = express()
 
